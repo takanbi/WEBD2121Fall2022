@@ -1,0 +1,32 @@
+<svg id="dashes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="263" height="175" viewBox="0 0 263 175">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="263" height="175" transform="translate(591 -274)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="356.85" height="140.344" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="dashes-2" data-name="dashes" transform="translate(-591 274)" clip-path="url(#clip-path)">
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(524.955 -256.672)" clip-path="url(#clip-path-2)">
+      <g transform="translate(-58.955 344.647)">
+        <path id="Path_1" data-name="Path 1" d="M44.515-457.692h39.7L-7.619-317.347H-45.637Z" transform="translate(104.592 113.045)" fill="#3947eb"/>
+      </g>
+      <g transform="translate(9.045 344.647)">
+        <path id="Path_1-2" data-name="Path 1" d="M44.515-457.692h39.7L-7.619-317.347H-45.637Z" transform="translate(104.592 113.045)" fill="#3947eb"/>
+      </g>
+      <g transform="translate(77.045 344.647)">
+        <path id="Path_1-3" data-name="Path 1" d="M44.515-457.692h39.7L-7.619-317.347H-45.637Z" transform="translate(104.592 113.045)" fill="#3947eb"/>
+      </g>
+      <g transform="translate(145.045 344.647)">
+        <path id="Path_1-4" data-name="Path 1" d="M44.515-457.692h39.7L-7.619-317.347H-45.637Z" transform="translate(104.592 113.045)" fill="#3947eb"/>
+      </g>
+      <g transform="translate(213.045 344.647)">
+        <path id="Path_1-5" data-name="Path 1" d="M44.515-457.692h39.7L-7.619-317.347H-45.637Z" transform="translate(104.592 113.045)" fill="#3947eb"/>
+      </g>
+      <g transform="translate(281.045 344.647)">
+        <path id="Path_1-6" data-name="Path 1" d="M44.515-457.692h39.7L-7.619-317.347H-45.637Z" transform="translate(104.592 113.045)" fill="#3947eb"/>
+      </g>
+    </g>
+  </g>
+</svg>
