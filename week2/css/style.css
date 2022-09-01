@@ -1,2 +1,7 @@
-
+#section1 {
+  border-radius: 48px;
+  background: #0017c7;
+  -webkit-box-shadow: inset 26px 26px 56px #00129b, inset -26px -26px 56px #001cf3;
+          box-shadow: inset 26px 26px 56px #00129b, inset -26px -26px 56px #001cf3;
+}
 /*# sourceMappingURL=style.css.map */
