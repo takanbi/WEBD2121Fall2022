@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=Cormorant:wght@300&family=Monoton&family=Montserrat:wght@100;500&family=Roboto:wght@900&display=swap");
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Comforter', cursive;
+// font-family: 'Cormorant', serif;
+// font-family: 'Monoton', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+#container1 {
+  // background-color: #000;
+
+  display: -webkit-box;
+
+  display: -webkit-flex;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  h1 {
+    // color: red;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9em;
+    text-shadow: 10px 10px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// #container1 {
+//     width: 100vw;
+//     height: 100vh;
+//     background-image: linear-gradient(180deg, #00084d, #000f94);
+//     border-bottom: 1px solid #fff;
+//   }
+#container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000f94),
+    to(#00084d)
+  );
+  background-image: -o-linear-gradient(top, #000f94, #00084d);
+  background-image: linear-gradient(180deg, #000f94, #00084d);
+  //   background-color: #000;
+  section {
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 0.5em;
+    button {
+      font-size: 1.5em;
+      padding: 1em;
+      border-radius: 0.5em;
+      border: none;
+      position: relative;
+      top: 1em;
+      left: 1em;
+      // border-radius: 41px;
+      background: #000f94;
+      box-shadow: inset 30px 30px 60px #000d7e, inset -30px -30px 60px #0011aa;
+      color: yellow;
+      cursor: pointer;
+    }
+  //   figure {
+  //     img {
+  //       width: 300px;
+  //       height: auto;
+  //       display:none;
+  //     }
+  //   }
+  // }
+}
+#ocean {
+  width: 600px;
+  height: 400px;
+  // background-color: red;
+  position: relative;
+  left: 240px;
+  top: -50px;
+}
+}
+.ocean1 {
+  background-size: cover;
+  background-image: url("../ocean1.jpg");
+}
