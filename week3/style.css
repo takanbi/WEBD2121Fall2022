@@ -1,0 +1,79 @@
+/* @import url('mobile.css') screen and (max-width: 600px); */
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: chartreuse;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    background-color: red;
+  }
+}
+#div1 {
+    margin: 2rem 0;
+    background: lavender;
+  }
+  
+  #p1, #p2, #p3 {
+    margin: .4rem 0 1.2rem 0;
+    background: yellow;
+  }
+/* div {
+    margin: 2rem 0;
+    background: lavender;
+  }
+  
+  p {
+    margin: .4rem 0 1.2rem 0;
+    background: yellow;
+  } */
+
+  div#div2 > section {
+    width: 33%;
+    /* display: inline-block; */
+    overflow: hidden;
+  
+  }
+  #div2 {
+    background-color: blue;
+    display: flex;
+  }
+  #sect1 {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+  }
+  #sect2 {
+    background-color: red;
+    padding: 2rem;
+  }
+  #sect3 {
+    padding: 0;
+  }
+  #sect3 > div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-image: url('landscape2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    /* background: url('landscape2.jpg') no-repeat;
+    background-size: cover; */
+
+  } 
+
+  #sect3 > div > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover;
+    width:320px;
+    height:640px */
+  }

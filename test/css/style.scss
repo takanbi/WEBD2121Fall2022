@@ -11,9 +11,9 @@
 }
 
 #container1 {
-  position: absolute;
-  top: 0;
-  z-index:-1;
+  // position: absolute;
+  // top: 0;
+  // z-index:-1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,4 +141,15 @@
  #patterns2 {
     position: relative;
     z-index: 5;
+  }
+
+  #container3 {
+    div {
+      width: 100%;
+      // img {width: 100%;}
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
