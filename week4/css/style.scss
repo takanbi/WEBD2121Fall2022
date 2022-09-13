@@ -1,0 +1,212 @@
+// body {
+//     background-color: grey;
+//   }
+//   @media screen and (min-width: 320px) {
+//     body {
+//       background-color: green;
+//     }
+//   }
+//   @media screen and (min-width: 550px) {
+//     body {
+//       background-color: yellow;
+//     }
+//   }
+//   @media screen and (min-width: 768px) {
+//     body {
+//       background-color: orange;
+//     }
+//   }
+//   @media screen and (min-width: 960px) {
+//     body {
+//       background-color: red;
+//     }
+//   }
+* {
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+#container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 9em;
+    text-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+  }
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text-pop-up-top {
+  //   .text-pop-up-top:hover {
+  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+      0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (pointer: coarse) {
+  h1 {
+    background-color: red;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1),
+      rgba(0, 0, 0, 0.8)
+    );
+    // background-color: #333;
+    //color: #ddd;
+  }
+  #container1 h1 {
+    color: red;
+  }
+}
+
+#container2 {
+  section {
+    max-width: 1024px;
+    margin: 0 auto;
+    header {
+      height: 10vh;
+      background-color: red;
+    }
+    #aa1,
+    #aa2 {
+      height: 80vh;
+      background-color: green;
+    }
+    #aa1 {
+      float: left;
+      width: 200px;
+      // width: 19.53125%;
+    }
+    #aa2 {
+      float: right;
+      width: 100px;
+      // width: 9.765625%;
+    }
+    main {
+      background-color: yellow;
+      width: 724px;
+      // width: 70.703125%;
+      width: auto;
+      height: 80vh;
+      // clear: right;
+      // margin-left: 200px;
+    }
+    footer {
+      height: 10vh;
+      background-color: black;
+    }
+  }
+}
+#container3 {
+  section {
+    max-width: 1400px;
+    margin: 0 auto;
+    header {
+      height: 10vh;
+      background-color: red;
+    }
+    div#main-content {
+      display: flex;
+      #aaa1,
+      #aaa2 {
+        height: 80vh;
+        background-color: green;
+      }
+      #aaa1 {
+        width: 20%;
+      }
+      #aaa2 {
+        width: 10%;
+      }
+      #main2 {
+        width: 40%;
+        background-color: yellow;
+      }
+      #aaa3 {
+        width: 30%;
+        background-color: aqua;
+        height: 80vh;
+      }
+    }
+    footer {
+      height: 10vh;
+      background-color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container3 {
+    section {
+        max-width: 768px;
+      div#main-content {
+        flex-direction: column;
+        #aaa1, #aaa2, #aaa3, #main2 {
+            width: 100%;
+        }
+      }
+    }
+  }
+}
