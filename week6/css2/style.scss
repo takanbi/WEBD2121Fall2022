@@ -1,70 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$royalBlue: rgb(65, 105, 225);
+$royalBlueDark: rgb(53, 85, 181);
+$white: rgb(100%, 100%, 100%);
+$black: rgb(0%,0%,0%);
+$lightBlack: rgba(0, 0, 0, 0.2);
+$textShadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
+$roboto: "Roboto", sans-serif;
+$montserrat: "Montserrat", sans-serif;
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: $roboto;
 }
 .container {
   width: 100%;
-  background-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1),
-    rgba(0, 0, 0, 0.2)
-  );
+  background-image: linear-gradient(180deg,$white, $lightBlack);
 }
 
 #container1 {
   display: none;
   h1 {
-    font-family: "Montserrat", sans-serif;
-    text-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    color: royalblue;
+    font-family: $montserrat;
+    text-shadow: $textShadow;
+    // color: $white;
+    color: $royalBlue;
     cursor: pointer;
   }
 }
 
 nav#navigation {
   height: 100vh;
-  background-color: royalblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-image: linear-gradient(
+    180deg,
+    $royalBlue,
+    $royalBlueDark
+  );
   section {
-      margin-top: -10em;
-      margin-bottom: 2em;
-       span {
-    font-family: "Montserrat", sans-serif;
-    font-size: 3em;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
-  }
-  }
- 
-  ul {
-    li {
-      list-style: none;
-      text-align: center;
-      color: rgba(255, 255, 255, 1);
-      cursor: pointer;
-    padding: 1.5em 2em;
-      a {
-        text-decoration: none;
-       color: inherit;
-        font-family: "Roboto", sans-serif;
-
-        text-transform: uppercase;
-        transition: color 500ms ease-in-out;
+    margin-top: -10em;
+    margin-bottom: 2em;
+    span {
+      font-family: $montserrat;
+      font-size: 3em;
+      font-weight: 600;
+      color: $white;
+    }
+    ul {
+      li {
+        list-style: none;
+        text-align: center;
+        color: $white;
+        cursor: pointer;
+        padding: 1.5em 2em;
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-family: $roboto;
+  
+          text-transform: uppercase;
+          transition: color 500ms ease-in-out;
+        }
       }
-    
-    }  li:hover { 
+      li:hover {
         color: rgba(0, 0, 0, 0.7);
       }
+    }
   }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -82,22 +90,53 @@ nav#navigation {
     }
   }
   nav#navigation {
+    background-color: $royalBlue;
+    background-image: none;
     height: 70px;
-    display: flex;
-    align-items: center;
-    padding: 0 6.5em;
-    // span {
-    //   font-family: "Montserrat", sans-serif;
-    //   font-size: 2em;
-    //   font-weight: 600;
-    //   color: rgba(255, 255, 255, 1);
-    // }
-    ul {
+    flex-direction: row;
+    padding: 0 3.5em;
+    section {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
       display: flex;
-      margin-left: auto;
+      align-items: center;
+      ul {
+        display: flex;
+        margin-left: auto;
+        li {
+          padding: 0;
+        }
+        li#about-nav {
+          padding: 0 1.5em;
+        }
+      }
+    }
+  }
+  .text-pop-up-top {
+    //   .text-pop-up-top:hover {
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+        0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+        0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
   }
 }
-
 
 // include some svg animation with navigation at mobile size
