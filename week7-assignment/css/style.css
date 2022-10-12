@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.container header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 94px;
+  background-color: #2699fb;
+}
+
+.container header nav {
+  width: 100%;
+  padding: 0 0.75em;
+}
+
+.container header nav section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header nav section h1 {
+  color: #fff;
+}
+
+.container header nav section div#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: auto;
+  width: 57px;
+  height: 36px;
+}
+
+.container header nav section div#menu span.menu-span {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  display: block;
+}
+
+.container header nav span {
+  color: #fff;
+}
+
+.container header nav ul {
+  display: none;
+}
+
+.container section#section-one {
+  margin-top: 3em;
+  padding: 0 0.75em;
+}
+
+.container section#section-one h3 {
+  color: #7f7f7f;
+}
+
+.container section#section-one p {
+  margin-top: 0.75em;
+  color: #2699fb;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
+.container section#section-one button {
+  margin-top: 3.5em;
+  padding: 1em 2.5em;
+  background-color: transparent;
+  color: #2699fb;
+  border: solid #bce0fd 2px;
+  border-radius: 4px;
+}
+
+.container section#section-one img {
+  margin: 2.5em 0 5.5em 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 0.35em;
+}
+
+.container section#section-two {
+  background-color: #f1f9ff;
+  padding: 1.5em 0.75em 5em 0.75em;
+}
+
+.container section#section-two p#section-two-p1 {
+  color: #2699fb;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  margin-bottom: 0.75em;
+}
+
+.container section#section-two p#section-two-p2 {
+  padding-top: 0.75em;
+  color: #2699fb;
+  font-size: 0.75em;
+  word-spacing: 2px;
+  line-height: 1.5em;
+}
+/*# sourceMappingURL=style.css.map */
