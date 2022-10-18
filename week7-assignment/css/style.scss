@@ -7,6 +7,8 @@ $lightBlue: #bce0fd;
 $largeParaType: Georgia, "Times New Roman", Times, serif;
 $largeParaSize: 40px;
 $veryLightBlue: #f1f9ff;
+$mediumText: 0.75em;
+$verySmallText: 0.65em;
 * {
   padding: 0;
   margin: 0;
@@ -96,6 +98,85 @@ $veryLightBlue: #f1f9ff;
       font-size: 0.75em;
       word-spacing: 2px;
       line-height: 1.5em;
+    }
+  }
+  section#section-three {
+    margin-top: 3em;
+    padding: 0 0.75em;
+    display: flex;
+    flex-direction: column;
+    img {
+      margin: 0.5em 0;
+    }
+  }
+  section#section-four {
+    margin-top: 1em;
+    padding: 0 0.75em;
+    .section-four-content {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 2em;
+      header {
+        display: flex;
+        background-color: $white;
+        img {
+          transform: scale(1.2);
+          
+        }
+        .name {
+          color: $skyBlue;
+          margin-left: 1em;
+          font-family: $roboto;
+          font-size: $mediumText;
+        }
+        .time {
+          color: $gray;
+          font-size: $verySmallText;
+          margin-left: auto;
+        }
+      }
+      p {
+        font-size: $verySmallText;
+        color:$gray;
+        line-height: 2em;
+        margin-bottom: 2.5em;
+      }
+      footer {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+        // margin-left: -1em;
+        .footer-child {
+          display: flex;
+          align-items: center;
+          margin-left: -1em;
+          margin-right: 2em;
+          svg {
+            transform: scale(0.5);
+            // transform-origin: 0% 50%;
+            margin-left: 0.5em;
+          }
+          .name {
+            color: $skyBlue;
+            // margin-left: 1em;
+            font-family: $roboto;
+            font-size: $mediumText;
+          }
+        }
+        .name {
+          color: $skyBlue;
+          // margin-left: 1em;
+          font-family: $roboto;
+          font-size: $mediumText;
+        }
+        .share {
+          margin-left: auto;
+        }
+        #Icon_awesome-heart, #Icon_awesome-minus-square {
+          fill:$skyBlue;
+        }
+      }
+    
     }
   }
 }
