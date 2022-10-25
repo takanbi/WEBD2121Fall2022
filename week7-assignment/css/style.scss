@@ -9,6 +9,7 @@ $largeParaSize: 40px;
 $veryLightBlue: #f1f9ff;
 $mediumText: 0.75em;
 $verySmallText: 0.65em;
+$mediumLineHeight: 2em;
 * {
   padding: 0;
   margin: 0;
@@ -121,7 +122,6 @@ $verySmallText: 0.65em;
         background-color: $white;
         img {
           transform: scale(1.2);
-          
         }
         .name {
           color: $skyBlue;
@@ -137,10 +137,16 @@ $verySmallText: 0.65em;
       }
       p {
         font-size: $verySmallText;
-        color:$gray;
-        line-height: 2em;
+        color: $gray;
+        line-height: $mediumLineHeight;
         margin-bottom: 2.5em;
       }
+      //newly added
+      figure {
+        display: flex;
+        justify-content: center;
+      }
+      //end newly added
       footer {
         display: flex;
         align-items: center;
@@ -172,13 +178,142 @@ $verySmallText: 0.65em;
         .share {
           margin-left: auto;
         }
-        #Icon_awesome-heart, #Icon_awesome-minus-square {
-          fill:$skyBlue;
+        #Icon_awesome-heart,
+        #Icon_awesome-minus-square {
+          fill: $skyBlue;
         }
       }
-    
     }
   }
+  #section-five {
+    background: $lightBlue;
+    padding: 1.5em 1em;
+    #section-five-div {
+      background: $white;
+      padding: 1em;
+      h1 {
+        font-family: $largeParaType;
+        font-size: 36px;
+        //change font size at higher breakpoints
+        // font-weight: bold;
+        color: $gray;
+        margin-bottom: 0.5em;
+      }
+      p#section-five-div-p1 {
+        color: $gray;
+        font-size: 1.75em;
+        font-weight: lighter;
+        margin-bottom: 1.25em;
+      }
+      p {
+        font-size: $verySmallText;
+        color: $skyBlue;
+        line-height: $mediumLineHeight;
+      }
+      #section-five-div-p2 {
+        margin-bottom: 1.5em;
+      }
+      #section-five-div-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .section-five-div-div-section {
+          width: 70%;
+          height: 140px;
+          background: $veryLightBlue;
+          margin: 0.25em 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          p:first-child {
+            font-weight: bold;
+            font-size: 1.15em;
+            font-family: $roboto;
+            span {
+              font-weight: normal;
+              font-size: 0.75em;
+              display: block;
+              margin-top: -1em;
+            }
+          }
+          p:last-child {
+            #Path_1,
+            #Path_2,
+            #Path_3 {
+              stroke: $skyBlue;
+              fill: $white;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    background: $skyBlue;
+    padding: 1.5em 1em;
+    color: $white;
+    h1 {
+      font-size: 1.17em;
+    }
+    p {
+      text-align: center;
+    }
+    form {
+      border: 1px solid $white;
+      margin: 0.5em auto 2em auto;
+      height: 50px;
+      // padding: 0 3em;
+      width: 90%;
+      display: flex;
+      border-radius: 0.25em;
+      input {
+        border: none;
+        background: transparent;
+        width: 75%;
+        height: 100%;
+      }
+      button {
+        color: $skyBlue;
+        background: $white;
+        padding: 0 2em;
+        border: none;
+        height: 100%;
+        width: 25%;
+        border-top-right-radius: 0.25em;
+        border-bottom-right-radius: 0.25em;
+      }
+    }
+    section {
+      margin: 1.25em 0;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        list-style: none;
+        line-height: 1.5em;
+      }
+      ul:first-child {
+        width: 70%;
+      }
+      ul:last-child {
+        width: 30%;
+      }
+    } 
+    address {
+    font-style:normal;
+    line-height: 1.5em;
+  }
+  #footer-copy {
+    font-size: $verySmallText;
+    display: inline-block;
+    margin-top: 2em;
+  }
+  }
+ 
+  //container class ends below
 }
 
 // downloaded new set of images, look in documents folder
+/* wrap each face image into a figure*/

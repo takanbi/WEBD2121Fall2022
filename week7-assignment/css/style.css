@@ -183,6 +183,15 @@
   margin-bottom: 2.5em;
 }
 
+.container section#section-four .section-four-content figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container section#section-four .section-four-content footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,7 +235,173 @@
   margin-left: auto;
 }
 
-.container section#section-four .section-four-content footer #Icon_awesome-heart, .container section#section-four .section-four-content footer #Icon_awesome-minus-square {
+.container section#section-four .section-four-content footer #Icon_awesome-heart,
+.container section#section-four .section-four-content footer #Icon_awesome-minus-square {
   fill: #2699fb;
 }
+
+.container #section-five {
+  background: #bce0fd;
+  padding: 1.5em 1em;
+}
+
+.container #section-five #section-five-div {
+  background: #fff;
+  padding: 1em;
+}
+
+.container #section-five #section-five-div h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 36px;
+  color: #7f7f7f;
+  margin-bottom: 0.5em;
+}
+
+.container #section-five #section-five-div p#section-five-div-p1 {
+  color: #7f7f7f;
+  font-size: 1.75em;
+  font-weight: lighter;
+  margin-bottom: 1.25em;
+}
+
+.container #section-five #section-five-div p {
+  font-size: 0.65em;
+  color: #2699fb;
+  line-height: 2em;
+}
+
+.container #section-five #section-five-div #section-five-div-p2 {
+  margin-bottom: 1.5em;
+}
+
+.container #section-five #section-five-div #section-five-div-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section {
+  width: 70%;
+  height: 140px;
+  background: #f1f9ff;
+  margin: 0.25em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:first-child {
+  font-weight: bold;
+  font-size: 1.15em;
+  font-family: "Roboto", sans-serif;
+}
+
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:first-child span {
+  font-weight: normal;
+  font-size: 0.75em;
+  display: block;
+  margin-top: -1em;
+}
+
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_1,
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_2,
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_3 {
+  stroke: #2699fb;
+  fill: #fff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.container #footer {
+  background: #2699fb;
+  padding: 1.5em 1em;
+  color: #fff;
+}
+
+.container #footer h1 {
+  font-size: 1.17em;
+}
+
+.container #footer p {
+  text-align: center;
+}
+
+.container #footer form {
+  border: 1px solid #fff;
+  margin: 0.5em auto 2em auto;
+  height: 50px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.25em;
+}
+
+.container #footer form input {
+  border: none;
+  background: transparent;
+  width: 75%;
+  height: 100%;
+}
+
+.container #footer form button {
+  color: #2699fb;
+  background: #fff;
+  padding: 0 2em;
+  border: none;
+  height: 100%;
+  width: 25%;
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+
+.container #footer section {
+  margin: 1.25em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container #footer section ul {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.container #footer section ul:first-child {
+  width: 70%;
+}
+
+.container #footer section ul:last-child {
+  width: 30%;
+}
+
+.container #footer address {
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.container #footer #footer-copy {
+  font-size: 0.65em;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+/* wrap each face image into a figure*/
 /*# sourceMappingURL=style.css.map */
